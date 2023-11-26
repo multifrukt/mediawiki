@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  web:
+    image: mediawiki
+    ports:
+      - 80:80
+
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_USER: admin
+      MARIADB_PASSWORD: admin
+      MARIADB_ROOT_PASSWORD: admin
+      MARIADB_DATABASE: my_wiki
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
