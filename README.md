@@ -38,7 +38,7 @@ Database: my_wiki
 
 ## Troubleshooting:
 
-By default MediaWiki is redirecting to its original server name when accessed with a different hostname. To access MediaWiki using another host name change `$wgServer` in LocalSettings.php file:
+By default MediaWiki is redirecting to its original server name when accessed with a different hostname. To access MediaWiki using another hostname change `$wgServer` in LocalSettings.php file:
 ```agsl
 $wgServer = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
 ```
