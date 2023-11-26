@@ -2,6 +2,12 @@
 
 ## mediawiki initial setup:
 
+Clone repository, run in repository root:
+
+```bash
+docker-compose up
+```
+
 Open http://localhost/ to configure mediawiki instance:
 ```agsl
 database type: MariaDB
