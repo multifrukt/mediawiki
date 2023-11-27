@@ -46,7 +46,7 @@ Database: my_wiki
 
 ## Troubleshooting:
 
-By default MediaWiki is redirecting to its original server name when accessed with a different hostname. To access MediaWiki using another hostname change `$wgServer` in `LocalSettings.php` file:
+After initial setup is complete, MediaWiki will always redirect to its original server name used during setup process. For example, if setup was done locally using http://localhost/ page and later some user tries to access the server remotely using http://server-network-name/, the engine will automatically redirect to http://localhost/. To access MediaWiki using any hostname change `$wgServer` in `LocalSettings.php` file:
 ```agsl
 $wgServer = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
 ```
