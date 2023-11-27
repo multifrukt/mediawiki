@@ -2,9 +2,9 @@
 
 [MediaWiki](https://en.wikipedia.org/wiki/MediaWiki) is the engine that powers Wikipedia. It is open-source software and can be deployed locally using Docker
 
-## mediawiki initial setup:
+## Initial setup:
 
-Clone repository, run in repository root:
+Clone repository, run inside the repository root:
 
 ```bash
 docker-compose up
