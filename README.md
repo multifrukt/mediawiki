@@ -12,9 +12,9 @@ docker-compose up
 
 Open http://localhost/ to configure mediawiki instance:
 ```agsl
-database type: MariaDB
-database host: db
-database name: my_wiki
+Database type: MariaDB
+Database host: db
+Database name: my_wiki
 Database table prefix: [not required]
 Database username: admin
 Database password: admin
@@ -46,7 +46,7 @@ Database: my_wiki
 
 ## Troubleshooting:
 
-After initial setup is complete, MediaWiki will always redirect to its original server name used during setup process. For example, if setup was done locally using http://localhost/ page and later some user tries to access the server remotely using http://server-network-name/, the engine will automatically redirect to http://localhost/. To access MediaWiki using any hostname change `$wgServer` in `LocalSettings.php` file:
+After initial setup is complete, MediaWiki will always redirect to its original server name, used during setup process. For example: if setup was done locally using http://localhost/ page and later some user tries to access the server remotely using http://server-network-name/, the engine will automatically redirect to http://localhost/. In order to access MediaWiki using any hostname change `$wgServer` in `LocalSettings.php` file:
 ```agsl
 $wgServer = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
 ```
