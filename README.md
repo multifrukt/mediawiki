@@ -19,7 +19,7 @@ Database password: admin
 Database account for web access: Use the same account as for installation
 ```
 
-Download `LocalSettings.php` file, put it into web container under path `/var/www/html` and set read permissions:
+Download `LocalSettings.php` file, put it into web container (created from `mediawiki` image) under path `/var/www/html` and set read permissions:
 
 ```agsl
 docker ps
