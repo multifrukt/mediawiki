@@ -33,8 +33,8 @@ Open http://localhost/, log in, create new page
 
 ## Adminer
 
-To connect directly to the database using Adminer:
-http://localhost:8080/
+To connect directly to the database using Adminer, open:  
+http://localhost:8080/  
 Log in using:
 ```agsl
 System: MySQL
